@@ -1,0 +1,60 @@
+<!-- <body id="kkk">
+
+  <form #contactForm="ngForm" (submit)="onSubmit(contactForm)" ngNativeVaidatet>
+   <h1>FormValidation</h1>
+    <div>
+  <label for="name">Name : </label>
+  <input type="text" placeholder="enter a name" name="name"  #name="ngModel" ngModel required><br><br>
+  <span style="color: blue;" *ngIf="!name.valid && name.touched">
+    <span *ngIf="!name.errors?.['reqiured']">*name required</span>
+  </span>
+  </div>
+  <div>
+  <label for="age">Age : </label>
+  <input type="number" placeholder="enter a age" name="age" #age="ngModel" ngModel min="18" required><br><br>
+  <span style="color: blue;" *ngIf="!age.valid && age.touched">
+    <span *ngIf="!age.errors?.['reqiured']">*Minimum age is 18</span>
+  </span>
+  <span style="color: blue;" *ngIf="!age.valid && age.touched">
+    <span *ngIf="!age.errors?.['min']">*Age required</span>
+  </span>
+
+  
+  </div>
+  <div>
+  <label for="gender">Gender : </label>
+  <input type="radio" name="gender" value="male" ngModel required>Male
+  <input type="radio" name="gender" value="female"ngModel required >Female
+  </div>
+  <br><br>
+  <div>
+  <label for="country">Country : </label>
+  <select name="country" ngModel required>
+    <option value="select" >Select</option>
+  <option value="{{c.id}}" *ngFor="let c of countries">{{c.name}}</option>
+  </select>
+  </div>
+  <br><br>
+  <div ngModelGroup>
+    <label for="address">Address</label><br><br>
+    <div class="add">
+    <label for="street">Street : </label>
+    <input type="text" placeholder="enter a street" name="street" #street="ngModel" ngModel required><br><br>
+    <span style="color: blue;" *ngIf="!street.valid && street.touched">
+      <span *ngIf="!street.errors?.['reqiured']">*street reqiured</span>
+    </span><br>
+    <label for="city">City : </label>
+    <input type="text" placeholder="enter a city"name="city" #city="ngModel" ngModel required><br><br>
+    <span style="color: blue;" *ngIf="!city.valid && city.touched">
+      <span *ngIf="!city.errors?.['reqiured']">*city reqiured</span>
+    </span><br>
+    <label for="pincode">PinCode : </label>
+    <input type="number" placeholder="enter a pinCode" name="pinCode" ngModel required><br><br>
+    </div>
+  </div>
+  <div>
+    <button>Submit</button>
+  </div>
+  </form>
+  </body> -->
+  <app-reactive></app-reactive>

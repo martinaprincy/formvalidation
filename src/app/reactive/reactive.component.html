@@ -1,0 +1,43 @@
+<p>reactive works!</p>
+
+<h1>Reactive Form</h1>
+<form [formGroup]="contactForm" (submit)="onSubmit()" >
+  <div>
+    <label><b>Name : </b></label>
+    <input type="text" name="name" formControlName="name">
+  </div><br><br>
+
+  <div>
+    <label><b>Age : </b></label>
+    <input type="number" name="age" formControlName="age">
+  </div><br><br>
+
+  <div>
+    <label><b>Gender : </b></label>
+    <input type="radio" name="gender" value="male" formControlName="gender"> Male
+    <input type="radio" name="gender" value="female" formControlName="gender"> Female
+  </div><br><br>
+
+  <div formGroupName="address">
+    <label><b>Address </b></label><br><br>
+
+    <div >
+      <label for="street"><b>Street : </b></label>
+      <input type="text" name="street" placeholder="Enter street address" formControlName="street">
+    </div><br>
+
+    <div >
+      <label for="city"><b>City : </b></label>
+      <input type="text" name="city" placeholder="Enter city" formControlName="city">
+    </div><br>
+
+    <div >
+      <label for="pincode"><b>Pin Code : </b></label>
+      <input type="text" name="pincode" placeholder="Enter pin code" formControlName="pincode">
+    </div><br>
+  </div>
+
+  <div>
+    <button type="submit">Submit</button>
+  </div>
+</form>
